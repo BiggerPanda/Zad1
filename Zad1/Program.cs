@@ -10,9 +10,10 @@ namespace Zad1
     {
         static void Main(string[] args)
         {
-            Plecak plecak = new Plecak(2, 5);
-
+            Plecak plecak = new Plecak(10,50,50);
+            plecak.GenerateItems();
             plecak.WriteList();
+            
         }
     }
 }

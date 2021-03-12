@@ -18,11 +18,18 @@ namespace Zad1
 
         
 
-        public Plecak(int seed,int itemsAmount)
+        public Plecak(int itemsAmount,int valueMax,int weightMax)
         {
             this.itemsAmount = itemsAmount;
-            RandomNumberGenerator rng = new RandomNumberGenerator(seed);
-            for (int i = 0; i <= itemsAmount; i++)
+            this.valueMax = valueMax;
+            this.weightMax = weightMax; 
+        }
+
+        public void GenerateItems()
+        {
+            itemList = new List<Item>();
+            RandomNumberGenerator rng = new RandomNumberGenerator(2);
+            for (int i = 0; i < itemsAmount; i++)
             {
                 itemList.Add(new Item(rng.nextInt(1, 29), rng.nextInt(1, 29)));
             }
@@ -30,9 +37,9 @@ namespace Zad1
 
         public void WriteList()
         {
-            foreach(var x in itemList)
+            foreach (var x in itemList)
             {
-                Console.WriteLine(x);
+                Console.WriteLine(x.Value.ToString() + " " + x.Weight.ToString());
             }
         }
     }
