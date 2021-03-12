@@ -1,0 +1,10 @@
+packages/MSTest.TestAdapter.2.1.1/build/_common/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+*.dll
+*.xml
+*.cache
+*.props
+*.targets
+*.nupkg
+*.p7s
+packages/MSTest.TestAdapter.2.1.1/LICENSE.txt
+packages/MSTest.TestFramework.2.1.1/LICENSE.txt
