@@ -1,0 +1,7 @@
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\bin\Debug\Zad1.exe.config
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\bin\Debug\Zad1.exe
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\bin\Debug\Zad1.pdb
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\obj\Debug\Zad1.csprojAssemblyReference.cache
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\obj\Debug\Zad1.csproj.CoreCompileInputs.cache
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\obj\Debug\Zad1.exe
+D:\Projekty Visual\Platformy.Net\Zad1\Zad1\obj\Debug\Zad1.pdb

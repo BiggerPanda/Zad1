@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad1", "Zad1\Zad1.csproj", "{29AD5085-D367-467A-8440-CA2B56DAB0F5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{527F21EA-7952-427A-B640-09BEC4AD3AD7}"
+	ProjectSection(SolutionItems) = preProject
+		Zad1\RandomNumberGenerator.cs = Zad1\RandomNumberGenerator.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest1", "UnitTest1\UnitTest1.csproj", "{361AA521-BF2A-4675-B117-360AC6411647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{29AD5085-D367-467A-8440-CA2B56DAB0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29AD5085-D367-467A-8440-CA2B56DAB0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29AD5085-D367-467A-8440-CA2B56DAB0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361AA521-BF2A-4675-B117-360AC6411647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361AA521-BF2A-4675-B117-360AC6411647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361AA521-BF2A-4675-B117-360AC6411647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361AA521-BF2A-4675-B117-360AC6411647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
