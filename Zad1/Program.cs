@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Zad1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+       
+        public static void Main()
         {
-            Plecak plecak = new Plecak(10,50,50);
+            Plecak plecak = new Plecak(10, 50, 50);
             plecak.GenerateItems();
             plecak.WriteList();
+            plecak.GatherItems();
             
         }
     }

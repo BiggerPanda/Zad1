@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zad1
 {
-    class Plecak
+    public class Plecak
     {
         public List<Item> itemList;
         public int valueMax;
@@ -15,6 +15,7 @@ namespace Zad1
         private int valueCurrent;
         private int weightCurrent;
         private int itemsAmount;
+        private List<Item> itemsInsideBackpack;
 
         
 
@@ -41,6 +42,30 @@ namespace Zad1
             {
                 Console.WriteLine(x.Value.ToString() + " " + x.Weight.ToString());
             }
+        }
+        public  bool Equals(Plecak obj)
+        {
+            if (obj.itemList == this.itemList && obj.valueMax==this.valueMax && obj.weightMax == this.weightMax)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void GatherItems()
+        {
+            foreach(var item in itemList)
+            {
+                if()
+               weightCurrent += item.Weight;
+               valueCurrent += item.Value;
+                
+            }
+            Console.WriteLine("weight" + weightCurrent.ToString());
+            Console.WriteLine("value" + valueCurrent.ToString());
         }
     }
 }
