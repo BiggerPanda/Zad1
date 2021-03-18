@@ -14,9 +14,10 @@ namespace Zad1
         {
             Plecak plecak = new Plecak(10, 50, 50);
             plecak.GenerateItems();
-            plecak.WriteList();
+            plecak.WriteItems();
             plecak.GatherItems();
-            
+            plecak.WriteList();
+
         }
     }
 }
