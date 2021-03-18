@@ -18,7 +18,7 @@ namespace UnitTest1
                 var test = new StringWriter();
                 Console.SetOut(test);
                 TestBackpack.GenerateItems();
-                TestBackpack.WriteList();
+                TestBackpack.WriteAllItems();
                 var y = test.ToString().Trim();
                 Console.SetOut(x);
                 Program.Main();

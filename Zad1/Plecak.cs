@@ -23,7 +23,8 @@ namespace Zad1
         {
             this.itemsAmount = itemsAmount;
             this.valueMax = valueMax;
-            this.weightMax = weightMax; 
+            this.weightMax = weightMax;
+            GenerateItems();
         }
 
         public void GenerateItems()
@@ -55,26 +56,25 @@ namespace Zad1
             while (n > 1);
         }
         
-        public void WriteItems()
+        public string WriteAllItems()
         {
-            foreach (var x in itemList)
-            {
-                Console.WriteLine(x.Value.ToString() + " " + x.Weight.ToString());
-            }
-            Console.WriteLine(" ");
+            var retString = new System.Text.StringBuilder();
             SortItemsByValue();
             foreach (var x in itemList)
             {
-                Console.WriteLine(x.Value.ToString() + " " + x.Weight.ToString());
+                retString.Append(x.Value.ToString() + " " + x.Weight.ToString());
             }
+            return retString.ToString();
         }
 
-        public void WriteList()
+        public string WriteListBackpack()
         {
+            var retString = new System.Text.StringBuilder();
             foreach (var x in itemsInsideBackpack)
             {
-                Console.WriteLine(x.Value.ToString() + " " + x.Weight.ToString());
+                retString.Append(x.Value.ToString() + " " + x.Weight.ToString());
             }
+            return retString.ToString();
         }
         public  bool Equals(Plecak obj)
         {

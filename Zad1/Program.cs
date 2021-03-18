@@ -9,14 +9,14 @@ namespace Zad1
 {
     public class Program
     {
-       
+
         public static void Main()
         {
             Plecak plecak = new Plecak(10, 50, 50);
             plecak.GenerateItems();
-            plecak.WriteItems();
+            plecak.WriteAllItems();
             plecak.GatherItems();
-            plecak.WriteList();
+            plecak.WriteListBackpack();
 
         }
     }
