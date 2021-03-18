@@ -17,7 +17,13 @@ namespace Zad1
         private int itemsAmount;
         private List<Item> itemsInsideBackpack = new List<Item>();
 
-        
+        public int ValueCurrent
+        {
+            get
+            {
+                return valueCurrent;
+            }
+        }
 
         public Plecak(int itemsAmount,int valueMax,int weightMax)
         {
@@ -62,7 +68,7 @@ namespace Zad1
             SortItemsByValue();
             foreach (var x in itemList)
             {
-                retString.Append(x.Value.ToString() + " " + x.Weight.ToString());
+                retString.Append(x.Value.ToString() + " " + x.Weight.ToString() + System.Environment.NewLine);
             }
             return retString.ToString();
         }
@@ -72,7 +78,7 @@ namespace Zad1
             var retString = new System.Text.StringBuilder();
             foreach (var x in itemsInsideBackpack)
             {
-                retString.Append(x.Value.ToString() + " " + x.Weight.ToString());
+                retString.Append(x.Value.ToString() + " " + x.Weight.ToString() + System.Environment.NewLine);
             }
             return retString.ToString();
         }
