@@ -28,15 +28,23 @@ namespace OkienkowaAplikacja
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox4.Text = "";
-            var amount = textBox1.Text;
-            var weight = textBox2.Text;
-            var value = textBox3.Text;
-            
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                textBox4.Text = "Brak parametrów";
+            }
+            else
+            {
+                textBox4.Text = "";
+                var amount = textBox1.Text;
+                var weight = textBox2.Text;
+                var value = textBox3.Text;
 
-            plecak = new Plecak(int.Parse(amount), int.Parse(value), int.Parse(weight));
-            var wholeBackpack = plecak.WriteAllItems();
-            textBox4.Text += wholeBackpack;
+
+                plecak = new Plecak(int.Parse(amount), int.Parse(value), int.Parse(weight));
+                var wholeBackpack = plecak.WriteAllItems();
+                textBox4.Text += wholeBackpack;
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
