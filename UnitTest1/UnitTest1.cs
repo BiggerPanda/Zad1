@@ -16,13 +16,14 @@ namespace UnitTest1
             Assert.IsNotNull(TestBackpack);
             var x = new StringWriter();
             TestBackpack.GenerateItems();
+            Console.SetOut(x);
             TestBackpack.GatherItems();
-            Console.SetOut(x);
             var res1 = x.ToString().Trim();
-            Console.SetOut(x);
+            var y = new StringWriter();
+            Console.SetOut(y);
             Zad1.Program.Main();
-            var res2 = x.ToString().Trim();
-            Assert.AreEqual(res2, res2);
+            var res2 = y.ToString().Trim();
+            Assert.AreEqual(res1, res2);
         }
 
         [TestMethod]
@@ -41,9 +42,7 @@ namespace UnitTest1
         public void TestGatherItems()
         {
             Plecak Backpack1 = new Plecak(15, 60, 60);
-            Plecak Backpack2 = new Plecak(15, 60, 60);
-            Assert.IsNotNull(Backpack1);
-            Assert.IsNotNull(Backpack2);
+            Plecak Backpack2 = new Plecak(2, 60, 60);
             var res1 = Backpack1.WriteListBackpack();
             var res2 = Backpack2.WriteListBackpack();
             Assert.AreEqual(res1, res2);
@@ -53,12 +52,10 @@ namespace UnitTest1
         public void TestGenereting()
         {
             Plecak Backpack1 = new Plecak(15, 60, 60);
-            Plecak Backpack2 = new Plecak(50, 60, 60);
-            Assert.IsNotNull(Backpack1);
-            Assert.IsNotNull(Backpack2);
+            Plecak Backpack2 = new Plecak(40, 60, 60);
             var res1 = Backpack1.WriteAllItems();
             var res2 = Backpack2.WriteAllItems();
-            Assert.IsFalse(Backpack1 == Backpack2); 
+            Assert.IsFalse(res1 == res2); 
         }
 
         [TestMethod]
@@ -66,7 +63,7 @@ namespace UnitTest1
         {
             Plecak Backpack2 = new Plecak(50, 60, 60);
             var res = Backpack2.WriteAllItems();
-            Backpack2.WriteListBackpack();
+            Backpack2.GatherItems();
             if (Backpack2.weightMax < Backpack2.WeightCurrent)
             {
                 Assert.Fail();

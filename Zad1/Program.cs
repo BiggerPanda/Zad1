@@ -17,6 +17,8 @@ namespace Zad1
             plecak.GenerateItems();
             plecak.GatherItems();
 
+
+
         }
     }
 }
