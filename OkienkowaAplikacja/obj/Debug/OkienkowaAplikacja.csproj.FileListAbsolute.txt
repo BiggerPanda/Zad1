@@ -12,3 +12,17 @@ D:\Projekty Visual\Platformy.Net\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaApli
 D:\Projekty Visual\Platformy.Net\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.csproj.CopyComplete
 D:\Projekty Visual\Platformy.Net\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.exe
 D:\Projekty Visual\Platformy.Net\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.pdb
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\bin\Debug\OkienkowaAplikacja.exe.config
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\bin\Debug\OkienkowaAplikacja.exe
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\bin\Debug\OkienkowaAplikacja.pdb
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\bin\Debug\Zad1.exe
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\bin\Debug\Zad1.pdb
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\bin\Debug\Zad1.exe.config
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.csprojAssemblyReference.cache
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.Form1.resources
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.Properties.Resources.resources
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.csproj.GenerateResource.cache
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.csproj.CoreCompileInputs.cache
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.csproj.CopyComplete
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.exe
+C:\Users\Amadeusz\Documents\Zad1\OkienkowaAplikacja\obj\Debug\OkienkowaAplikacja.pdb
