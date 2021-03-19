@@ -25,6 +25,14 @@ namespace Zad1
             }
         }
 
+        public int WeightCurrent
+        {
+            get
+            {
+                return weightCurrent;
+            }
+        }
+
         public Plecak(int itemsAmount,int valueMax,int weightMax)
         {
             this.itemsAmount = itemsAmount;
