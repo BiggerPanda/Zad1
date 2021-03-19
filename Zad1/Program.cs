@@ -10,6 +10,9 @@ namespace Zad1
     {
         static void Main(string[] args)
         {
+            Plecak plecak = new Plecak(2, 5);
+
+            plecak.WriteList();
         }
     }
 }
