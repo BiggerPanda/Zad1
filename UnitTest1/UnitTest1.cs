@@ -11,22 +11,55 @@ namespace UnitTest1
         Plecak TestBackpack = new Plecak(10, 50, 50);
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestMain()
         {
-            using (var x = new StringWriter())
-            {
-                var test = new StringWriter();
-                Console.SetOut(test);
-                TestBackpack.GenerateItems();
-                TestBackpack.WriteAllItems();
-                var y = test.ToString().Trim();
-                Console.SetOut(x);
-                Program.Main();
-                var res = x.ToString().Trim();
-                Assert.AreEqual(res, y);
-                
-            }
-        
+            var x = new StringWriter();
+            TestBackpack.GenerateItems();
+            TestBackpack.GatherItems();
+            Console.SetOut(x);
+            var res1 = x.ToString().Trim();
+            Console.SetOut(x);
+            Zad1.Program.Main();
+            var res2 = x.ToString().Trim();
+            Assert.AreEqual(res2, res2);
         }
+
+        [TestMethod]
+        public void TestSorting()
+        {
+            Plecak Backpack1 = new Plecak(15, 60, 60);
+            Plecak Backpack2 = new Plecak(15, 60, 60);
+            Assert.IsNotNull(Backpack1);
+            Assert.IsNotNull(Backpack2);
+            var res1 = Backpack1.WriteAllItems();
+            var res2 = Backpack2.WriteAllItems();
+            Assert.AreEqual(res1, res2);
+        }
+
+        [TestMethod]
+        public void TestGatherItems()
+        {
+            Plecak Backpack1 = new Plecak(15, 60, 60);
+            Plecak Backpack2 = new Plecak(15, 60, 60);
+            Assert.IsNotNull(Backpack1);
+            Assert.IsNotNull(Backpack2);
+            var res1 = Backpack1.WriteListBackpack();
+            var res2 = Backpack2.WriteListBackpack();
+            Assert.AreEqual(res1, res2);
+        }
+
+        [TestMethod]
+        public void TestGenereting()
+        {
+            Plecak Backpack1 = new Plecak(15, 60, 60);
+            Plecak Backpack2 = new Plecak(50, 60, 60);
+            Assert.IsNotNull(Backpack1);
+            Assert.IsNotNull(Backpack2);
+            var res1 = Backpack1.WriteAllItems();
+            var res2 = Backpack2.WriteAllItems();
+            Assert.IsFalse(Backpack1 == Backpack2);
+            
+        }
+
     }
 }
